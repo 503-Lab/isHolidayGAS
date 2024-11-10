@@ -6,7 +6,7 @@ function doGet(e) {
     const date = timestamp ? new Date(parseInt(timestamp)) : new Date();
 
     // GoogleカレンダーID（日本の祝日カレンダー）
-    const calendarId = 'ja.japanese#holiday@group.v.calendar.google.com';
+    const calendarId = 'ja.japanese.official#holiday@group.v.calendar.google.com';
 
     // 今日のイベントを取得
     const events = CalendarApp.getCalendarById(calendarId).getEventsForDay(date);
